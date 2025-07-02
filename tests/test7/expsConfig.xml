@@ -1,0 +1,12 @@
+<Exps>
+  <RangeExp>
+    <puf_ids>
+      <id>0</id>
+    </puf_ids>
+    <challenge_bits_width>8</challenge_bits_width>
+    <step>1</step>
+    <num_exps>200</num_exps>
+    <exp_interperiod_m>5</exp_interperiod_m>
+    <queries_interperiod_s>2</queries_interperiod_s>
+  </RangeExp>
+</Exps>

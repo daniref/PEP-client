@@ -1,0 +1,19 @@
+<Exps>
+  <ListExp>
+    <puf_ids>
+      <id>0</id>
+      <id>1</id>
+      <id>2</id>
+      <id>3</id>
+      <id>4</id>
+      <id>5</id>
+      <id>6</id>
+    </puf_ids>
+    <challenges_list>
+      <challenge>0</challenge>
+    </challenges_list>
+    <num_exps>200</num_exps>
+    <exp_interperiod_m>5</exp_interperiod_m>
+    <queries_interperiod_s>0</queries_interperiod_s>
+  </ListExp>
+</Exps>

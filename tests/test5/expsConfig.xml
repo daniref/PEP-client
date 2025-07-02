@@ -1,0 +1,13 @@
+<Exps>
+  <RandomExp>
+    <puf_ids>
+      <id>0</id>
+    </puf_ids>
+    <challenges_range>32</challenges_range>
+    <random_seed>4123</random_seed>
+    <num_exps>50</num_exps>
+    <exp_interperiod_m>5</exp_interperiod_m>
+    <num_challenges>800</num_challenges>
+    <queries_interperiod_s>5</queries_interperiod_s>
+  </RandomExp>
+</Exps>

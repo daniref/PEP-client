@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<FPGA>
+  <PUFInstance>
+    <type>0</type>
+    <description>
+      The IP core developed by Daniele Lombardi implements a classic arbiter puf, 
+      where each switch block takes in 2 signals and returns 2 signals, 
+      driven by a single challenge bit. 
+      The arbiter compares the 2 signals output from the last switch block 
+      and returns one response bit.
+    </description>
+    <phyAddress>A0080000</phyAddress>
+    <ipSize>10000</ipSize>
+    <ctrlRegOff>0</ctrlRegOff>
+    <ctrlValue>0</ctrlValue> 
+    <readyRegOff>8</readyRegOff>
+    <chalSize>32</chalSize>
+    <chalRegOff>
+      <regOff>4</regOff>
+    </chalRegOff>
+    <respSize>8</respSize>
+    <respRegOff>
+      <regOff>c</regOff>
+    </respRegOff>
+    <countSize>0</countSize>
+    <count1RegOff>
+    </count1RegOff>
+    <count2RegOff>
+    </count2RegOff>
+  </PUFInstance>
+</FPGA>

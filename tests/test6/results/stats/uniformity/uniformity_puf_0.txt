@@ -1,0 +1,57 @@
+Device 1
+Mean: 0.1328125
+Standard Deviation: 0.0
+Device 2
+Mean: 0.4921875
+Standard Deviation: 0.0
+Device 3
+Mean: 0.3203125
+Standard Deviation: 0.0
+Device 4
+Mean: 0.6171875
+Standard Deviation: 0.0
+Device 5
+Mean: 0.24609375
+Standard Deviation: 0.0
+Device 6
+Mean: 0.51953125
+Standard Deviation: 0.0
+Device 7
+Mean: 0.1953125
+Standard Deviation: 0.0
+Device 8
+Mean: 0.2109375
+Standard Deviation: 0.0
+Device 9
+Mean: 0.22265625
+Standard Deviation: 0.0
+Device 10
+Mean: 0.5390625
+Standard Deviation: 0.0
+Device 11
+Mean: 0.46875
+Standard Deviation: 0.0
+Device 12
+Mean: 0.42578125
+Standard Deviation: 0.0
+Device 13
+Mean: 0.55078125
+Standard Deviation: 0.0
+Device 14
+Mean: 0.06640625
+Standard Deviation: 0.0
+Device 15
+Mean: 0.35546875
+Standard Deviation: 0.0
+Device 16
+Mean: 0.52734375
+Standard Deviation: 0.0
+Device 17
+Mean: 0.546875
+Standard Deviation: 0.0
+Device 18
+Mean: 0.328125
+Standard Deviation: 0.0
+Total
+Mean: 0.3758680555555556
+Standard Deviation: 0.1622207488250012

@@ -1,0 +1,1148 @@
+Device 1
+ID PUF: 0
+Mean: 2474508.625
+Standard Deviation: 4849749.696852989
+Device 2
+ID PUF: 0
+Mean: 7361494.619140625
+Standard Deviation: 5087541.806826165
+Device 3
+ID PUF: 0
+Mean: 5932914.3203125
+Standard Deviation: 4753251.034728269
+Device 4
+ID PUF: 0
+Mean: 4145675.126953125
+Standard Deviation: 5011435.656707203
+Device 5
+ID PUF: 0
+Mean: 6092148.84375
+Standard Deviation: 4215637.641448445
+Device 6
+ID PUF: 0
+Mean: 3439514.666015625
+Standard Deviation: 5082828.024714687
+Device 7
+ID PUF: 0
+Mean: 4805598.931640625
+Standard Deviation: 4769054.501662806
+Device 8
+ID PUF: 0
+Mean: 5236892.3125
+Standard Deviation: 4532920.293513552
+Device 9
+ID PUF: 0
+Mean: 6746061.7734375
+Standard Deviation: 187385.0956119608
+Device 10
+ID PUF: 0
+Mean: 5560040.814453125
+Standard Deviation: 239581.61568380162
+Device 11
+ID PUF: 0
+Mean: 1621816.0546875
+Standard Deviation: 297916.5075645428
+Device 1
+ID PUF: 0
+Mean: 2474508.625
+Standard Deviation: 4849749.696852989
+Device 2
+ID PUF: 0
+Mean: 7361494.619140625
+Standard Deviation: 5087541.806826165
+Device 3
+ID PUF: 0
+Mean: 5932914.3203125
+Standard Deviation: 4753251.034728269
+Device 4
+ID PUF: 0
+Mean: 4145675.126953125
+Standard Deviation: 5011435.656707203
+Device 5
+ID PUF: 0
+Mean: 6092148.84375
+Standard Deviation: 4215637.641448445
+Device 6
+ID PUF: 0
+Mean: 3439514.666015625
+Standard Deviation: 5082828.024714687
+Device 7
+ID PUF: 0
+Mean: 4805598.931640625
+Standard Deviation: 4769054.501662806
+Device 8
+ID PUF: 0
+Mean: 5236892.3125
+Standard Deviation: 4532920.293513552
+Device 9
+ID PUF: 0
+Mean: 6746061.7734375
+Standard Deviation: 187385.0956119608
+Device 10
+ID PUF: 0
+Mean: 5560040.814453125
+Standard Deviation: 239581.61568380162
+Device 11
+ID PUF: 0
+Mean: 1621816.0546875
+Standard Deviation: 297916.5075645428
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+
+Device 1
+ID PUF: 0
+Mean of Delta Frequencies: 2474508.6250
+Standard Deviation of Delta Frequencies: 4849749.6969
+
+Device 2
+ID PUF: 0
+Mean of Delta Frequencies: 7361494.6191
+Standard Deviation of Delta Frequencies: 5087541.8068
+
+Device 3
+ID PUF: 0
+Mean of Delta Frequencies: 5932914.3203
+Standard Deviation of Delta Frequencies: 4753251.0347
+
+Device 4
+ID PUF: 0
+Mean of Delta Frequencies: 4145675.1270
+Standard Deviation of Delta Frequencies: 5011435.6567
+
+Device 5
+ID PUF: 0
+Mean of Delta Frequencies: 6092148.8438
+Standard Deviation of Delta Frequencies: 4215637.6414
+
+Device 6
+ID PUF: 0
+Mean of Delta Frequencies: 3439514.6660
+Standard Deviation of Delta Frequencies: 5082828.0247
+
+Device 7
+ID PUF: 0
+Mean of Delta Frequencies: 4805598.9316
+Standard Deviation of Delta Frequencies: 4769054.5017
+
+Device 8
+ID PUF: 0
+Mean of Delta Frequencies: 5236892.3125
+Standard Deviation of Delta Frequencies: 4532920.2935
+
+Device 9
+ID PUF: 0
+Mean of Delta Frequencies: 6746061.7734
+Standard Deviation of Delta Frequencies: 187385.0956
+
+Device 10
+ID PUF: 0
+Mean of Delta Frequencies: 5560040.8145
+Standard Deviation of Delta Frequencies: 239581.6157
+
+Device 11
+ID PUF: 0
+Mean of Delta Frequencies: 1621816.0547
+Standard Deviation of Delta Frequencies: 297916.5076
+

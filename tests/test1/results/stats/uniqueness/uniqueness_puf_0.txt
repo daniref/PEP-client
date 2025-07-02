@@ -1,0 +1,3 @@
+Total
+Mean: 0.027696969696969696
+Standard Deviation: 0.03682091273074405
