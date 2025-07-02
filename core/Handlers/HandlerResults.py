@@ -256,12 +256,9 @@ def CalculateMetrics(idTest):
 
         for i in range(len(expCRPsList)):
             MT.ComputeUniformity(idTest,expCRPsList[i],i,indexDevToIdDev)
-            # MT.ComputeReliability(idTest,expCRPsList[i],i,indexDevToIdDev)
-            # MT.ComputeBitAliasing(idTest,expCRPsList[i],i,indexDevToIdDev)
-            # MT.ComputeUniqueness(idTest,expCRPsList[i],i,indexDevToIdDev)
-            # MT.ComputeBitReliability(idTest,expCRPsList[i],i,indexDevToIdDev)
-            # MT.ComputeMinHentropyDensity(idTest,expCRPsList[i],i,indexDevToIdDev)
-            # MT.ComputeTemperatureReliability(idTest,expCRPsList[i],i,indexDevToIdDev,TemperatueArray)
+            MT.ComputeReliability(idTest,expCRPsList[i],i,indexDevToIdDev)
+            MT.ComputeBitAliasing(idTest,expCRPsList[i],i,indexDevToIdDev)
+            MT.ComputeUniqueness(idTest,expCRPsList[i],i,indexDevToIdDev)
         
         if hasCountersList[indexExp]:
             for index, idDev in enumerate(devicesList):
@@ -269,7 +266,6 @@ def CalculateMetrics(idTest):
                 csvPath = f"{resultsCSVsBase}{campaignList[index]}.csv"
                 df = ExtractRelevantFields(csvPath)
                 MT.AnalyzeFrequencies(idTest,idDev,idPufList,df,oscillPeriod)
-
 
 def ExtractRelevantFields(csv_file_path):
     """
