@@ -78,13 +78,13 @@ Or use `app.py`, following the provided instructions during its usage, for an in
 
 ## 🔐 Authentication
 
-All operations require a valid `--username` and `--password`. These credentials are used to authenticate with the PUF server.
+All operations require a valid `--username` and `--password`. These credentials are used to authenticate with the system-evaluation server.
 
 ---
 
 ## 🧪 Test Data
 
-The `tests/` folder contains subdirectories (e.g., `test0`, `test1`, ...) which appear to store output data from different experiment campaigns.
+The `tests/` folder contains subdirectories (e.g., `test0`, `test1`, ...) which stores output data from different experiment campaigns.
 
 ---
 
