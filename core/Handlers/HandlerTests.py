@@ -4,41 +4,66 @@ from core.Utility import *
 import core.Handlers.HandlerAccess as HA
 
 def _GetDevicesAvailable(username,password):
+    """
+    Retrieves the list of available devices from the server.
+    Args:
+        username (str): The username of the user.
+        password (str): The password of the user.
+    Returns:
+        list: A list of available devices if the request is successful, None otherwise.
+    """
     data = {
         'username':username,
         'password':password
     }
     httpUrl = urljoin(GetServerAddress(), httpGetDevAv)
-    # Effettua una richiesta GET al server
+    # Execute a POST request to the server
     response = requests.post(httpUrl, data=data, verify=certFile)
 
-    # Verifica se la richiesta è andata a buon fine (codice di stato 200)
+    # Check if the request was successful (status code 200)
     if response.status_code == 200:
-        # La risposta contiene i dispositivi disponibili, quindi possiamo accedere ai dati
-        devices = response.json()  # Converti la risposta in formato JSON
+        # The answer contains the available devices, so we can access the data
+        devices = response.json()  # Convert the response to JSON format
         return devices
     else:
-        # Se la richiesta non è andata a buon fine, gestisci l'errore
+        # if the request was not successful, handle the error
         print('[CLIENT-APP] - Http Get: Devs Available Error:', response.status_code)
 
 def _LockDeviceByIdDev(idUser,idDevice,username,password):
-
+    """
+    Locks a device by its ID and sets its state to unavailable.
+    Args:
+        idUser (str): The ID of the user.
+        idDevice (str): The ID of the device to lock.
+        username (str): The username of the user.
+        password (str): The password of the user.
+    Returns:
+        dict: The result of the lock operation if successful, None otherwise.
+    """
     httpUrl = urljoin(GetServerAddress(), httpGetDevAv)
     params={'idUser': idUser, 'idDevice': idDevice, 'state': 'unavailable','username':username,'password':password}
     response = requests.post(httpUrl,data=params, verify=certFile)
 
-    # Verifica se la richiesta è andata a buon fine (codice di stato 200)
+    # check if the request was successful (status code 200)
     if response.status_code == 200:
-        # La risposta contiene i dispositivi disponibili, quindi possiamo accedere ai dati
-        resultOperation = response.json()  # Converti la risposta in formato JSON
+        # The answer contains the result of the lock operation, so we can access the data
+        resultOperation = response.json()  # Convert the response to JSON format
         return resultOperation
     else:
-        # Se la richiesta non è andata a buon fine, gestisci l'errore
+        # If the request was not successful, handle the error
         print('[CLIENT-APP] - Http Get: Lock Device Error:', response.status_code)
 
 def _SendsPufsConfig(idUser,testDir,username,password):
-
-    #send pufs conf xml
+    """
+    Sends the PUF configuration and bitstream files to the server.
+    Args:
+        idUser (str): The ID of the user.
+        testDir (str): The directory where the test files are located.
+        username (str): The username of the user.
+        password (str): The password of the user.
+    Returns:
+        tuple: A tuple containing a boolean indicating success and the ID of the PUF configuration if successful, None otherwise.
+    """
     httpUrl = urljoin(GetServerAddress(), httpPostConfigFile)
     file = {'file': open(testDir+pufsConfigName+'.xml', 'rb')}
     payload = {'idUsr':idUser,'type':'pufsConf','username':username,'password':password}   
@@ -62,8 +87,18 @@ def _SendsPufsConfig(idUser,testDir,username,password):
     return False, None
  
 def _SendsExpsConfig(idUser,idDevice,idPufsConfig,testDir,username,password):
-
-    #send exp json
+    """
+    Sends the experimental configuration file to the server for a specific device.
+    Args:
+        idUser (str): The ID of the user.
+        idDevice (str): The ID of the device.
+        idPufsConfig (str): The ID of the PUF configuration.
+        testDir (str): The directory where the test files are located.
+        username (str): The username of the user.
+        password (str): The password of the user.
+    Returns:
+        tuple: A tuple containing a boolean indicating success and the ID of the campaign if successful, None otherwise.
+    """
     httpUrl = urljoin(GetServerAddress(), httpPostConfigFile)
     file = {'file': open(testDir+expsConfigName+'.xml', 'rb')}
     payload = {'idUsr':idUser,'idDev':idDevice,'type':'expsConf', 'idpufsconfig':idPufsConfig,'username':username,'password':password}   
@@ -76,10 +111,19 @@ def _SendsExpsConfig(idUser,idDevice,idPufsConfig,testDir,username,password):
     return False, None
 
 def _LockAndProgramDevice(idUser,idDevice,idPufsConfig,testDir,username,password):
-    resOp = _LockDeviceByIdDev(idUser,idDevice,username,password) #blocco il primo utile
+    """
+    Locks a device by its ID and programs it with the PUF configuration and experimental configuration.
+    Args:
+        idUser (str): The ID of the user.
+        idDevice (str): The ID of the device to lock and program.
+        idPufsConfig (str): The ID of the PUF configuration.
+        testDir (str): The directory where the test files are located.
+        username (str): The username of the user.
+        password (str): The password of the user.
+    """
+    resOp = _LockDeviceByIdDev(idUser,idDevice,username,password) #lock the first device 
     if resOp:
         print('[CLIENT-APP] - LockAndProgramDevice() - Device with id ',idDevice,' locked successfully!')
-        # Inizia a comandare il device
 
         # program FPGA
         result,idcamp = _SendsExpsConfig(idUser,idDevice,idPufsConfig,testDir,username,password)
@@ -92,35 +136,51 @@ def _LockAndProgramDevice(idUser,idDevice,idPufsConfig,testDir,username,password
         print('[CLIENT-APP] - LockAndProgramDevice() - Device with id ',idDevice,' not correctly locked!')
 
 def _SaveCampaignData(idCampaign, idDevice, testDirectory):
-    # Assicurati che la directory esista
+    """
+    Saves the campaign data to a CSV file in the specified test directory.
+    Args:
+        idCampaign (str): The ID of the campaign.
+        idDevice (str): The ID of the device.
+        testDirectory (str): The directory where the test files are located.
+    """
+    # check if the test directory exists, if not create it
     if not os.path.exists(testDirectory):
         os.makedirs(testDirectory)
     
-    # Path del file csv
+    # Path of the CSV file where the campaign data will be saved
     filePath = os.path.join(testDirectory, 'campaigns.csv')
     
-    # Verifica se il file esiste, in modo da scrivere l'header solo una volta
+    # if the file exists, so we write the header only once
     fileExists = os.path.isfile(filePath)
     
-    # Apri il file in modalità append per aggiungere nuovi dati
+    # Open the file in append mode to add new data
     with open(filePath, mode='a', newline='') as file:
         writer = csv.writer(file)
         
-        # Se il file non esiste, scrivi l'header
+        # if the file does not exist, write the header
         if not fileExists:
             writer.writerow(['idCampaign', 'idDev'])
         
-        # Scrivi i dati della campagna
+        # write the campaign data
         writer.writerow([idCampaign, idDevice])
 
 def LaunchTests(numDevices,idTest,idUser,username,password):
+    """
+    Launches tests by locking and programming devices with the specified PUF configuration and experimental configuration.
+    Args:
+        numDevices (int): The number of devices to use for the tests.
+        idTest (int): The ID of the test.
+        idUser (str): The ID of the user.
+        username (str): The username of the user.
+        password (str): The password of the user.
+    """
     testDir = baseTestsDir+str(idTest)+'/'
     print('[CLIENT-APP] - LaunchTests() - Request to program ', numDevices, 'devices!')
     # user not registered
     if idUser:
         print('[CLIENT-APP] - LaunchTests() - User registered with id: ', idUser)
 
-        devicesList = _GetDevicesAvailable(username,password) #chiedo se ci sono device disponibili
+        devicesList = _GetDevicesAvailable(username,password) #ask the server for available devices
         if devicesList is not None:
             print('[CLIENT-APP] - LaunchTests() - Number of available devices: ',len(devicesList))
         else:
