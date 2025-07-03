@@ -1,7 +1,6 @@
 from core.Metrics import Common as CM
 from core.Utility import *
 from matplotlib.ticker import MaxNLocator
-import pandas as pd
 from scipy.stats import mode
 
 def ComputeUniformity(idTest, df, idPuf, indexDevToIdDev):
@@ -120,7 +119,6 @@ def ComputeUniformity(idTest, df, idPuf, indexDevToIdDev):
     # plt.gca().yaxis.set_major_locator(MaxNLocator(nbins=3))
 
     # Compute the Gaussian curve for the total uniformity
-    # mu, std = norm.fit(allUniformities)  # Computes mean and standard deviation for the total uniformity
     mu = np.nanmean(allUniformities)
     std = np.nanstd(allUniformities)
     print(f'[CLIENT-APP] - Total \t\t Uniformity: mean = {mu} \t std = {std}')
@@ -725,138 +723,3 @@ def AnalyzeFrequencies(idTest, idDev, idPufList, df, oscillPeriod):
             f.write(f'Standard Deviation of Delta Frequencies: {mean_of_stds:.4f}\n\n')
 
     print(f'[CLIENT-APP] - Frequencies analysis completed. Plots saved in: {plotsPath}')
-    """
-    Computes the bit reliability and uniqueness of a Physical Unclonable Function (PUF) 
-    across multiple devices and temperature variations. The function generates heatmaps, 
-    reliability plots, and uniqueness plots for the given PUF data.
-    Parameters:
-    -----------
-    idTest : int
-        Identifier for the test being conducted.
-    df : numpy.ndarray
-        A 4D array containing PUF responses with dimensions 
-        (numChals, respWidth, numReps, numDevice). Each element represents 
-        the response of a device to a specific challenge under certain conditions.
-    idPuf : int
-        Identifier for the PUF being analyzed.
-    indexDevToIdDev : dict
-        A mapping from device indices to device identifiers.
-    Returns:
-    --------
-    None
-        The function saves the computed results (heatmaps, reliability plots, 
-        and uniqueness plots) to the appropriate directories.
-    Notes:
-    ------
-    - The function skips computation if the number of challenges exceeds 10.
-    - Reliability is computed for each device and challenge, normalized, and visualized 
-      as heatmaps.
-    - Reliability and uniqueness are analyzed across temperature clusters, and the results 
-      are plotted.
-    - The function creates directories for saving plots and statistics if they do not exist.
-    - Results are saved as PDF files in the specified directories.
-    Outputs:
-    --------
-    - Heatmaps for bit reliability per challenge.
-    - Line plots for reliability across temperature variations for each device.
-    - Line plots for uniqueness across temperature clusters.
-    - Combined plots for reliability and uniqueness against temperature clusters.
-    Raises:
-    -------
-    - The function assumes the existence of global variables `baseTestsDir`, `deltaT_cluster`, 
-      and `TemperatueArray`. Ensure these are defined before calling the function.
-    - If the input data contains NaN values, they are handled appropriately during computations.
-    """
-    
-    print(f'[CLIENT-APP] -----------------BIT RELIABILITY COMPUTATION FOR PUF {idPuf}-----------------')
-
-    numDevice = df.shape[3]
-    numReps = df.shape[2]
-    respWidth = df.shape[1]
-    numChals = df.shape[0]
-
-    if numChals > 10:
-        print(f'[CLIENT-APP] - Too many challenges ({numChals}). Skipping bit reliability computation.')
-        return
-
-    baseTestDir = baseTestsDir+str(idTest)
-    # Creation of directories to save plots and statistics
-    plotsPath = os.path.join(baseTestDir, 'results', 'plots' , 'reliability')
-    statsPath = os.path.join(baseTestDir, 'results', 'stats', 'reliability')
-    os.makedirs(plotsPath, exist_ok=True)
-    os.makedirs(statsPath, exist_ok=True)
-
-    bitReliabilityFile = os.path.join(statsPath, f'bitreliability_puf_{idPuf}.txt')
-    # Remove the file if it exists
-    if os.path.exists(bitReliabilityFile):
-        os.remove(bitReliabilityFile)
-
-    # Compute the bit reliability for each challenge
-    for c in range(numChals):
-        # allRespBitAlias will have dimensions (numDevice, respWidth)
-        allDevAllChBitRel = np.zeros((numDevice, respWidth))
-        # Compute the average response bits for each challenge and device
-        for d in range(numDevice):
-            # Average the responses across repetitions for each device and challenge
-            oneDevOneChBitRel = np.nanmean(df[c, :, :, d], axis=(1))
-            allDevAllChBitRel[d, : ] = oneDevOneChBitRel
-
-        normalizedBitReliability = np.where(allDevAllChBitRel > 0.5, allDevAllChBitRel, 1 - allDevAllChBitRel)
-
-        # Plotting the heatmap for bit reliability
-        plt.figure(figsize=(15, 2))
-
-        # palette = sns.color_palette("hls", 8)
-
-        hm = sns.heatmap(
-            normalizedBitReliability,
-            cmap="viridis",
-            cbar=True,
-            xticklabels=False,  # Disabilitiamo i tick “automatici” sull’asse x
-            yticklabels=True,  # (idem per y)
-            vmin=0.5,
-            vmax=1
-        )
-
-        # Customizing the heatmap
-        cbar = hm.collections[0].colorbar
-        cbar.set_ticks([0.5, 0.6, 0.7, 0.8, 0.9, 1])
-        cbar.set_ticklabels(['0.5', '0.6', '0.7', '0.8', '0.9', '1'])
-   
-        # Invert the x-axis so that the most significant bit (MSB) is on the right
-        plt.gca().invert_xaxis()
-
-        # Invert the y-axis so that the first device is at the top
-        plt.gca().invert_yaxis()
-
-        # Create tick positions for the x-axis
-        numXTicks = 6
-        tickPositions = np.linspace(0, respWidth - 1, numXTicks)
-
-        # Compute the tick labels for the x-axis
-        # The labels will be in reverse order so that:
-        # - the column respWidth-1 (now on the left) has label "0" (LSB)
-        # - the column 0 (now on the right) has label "respWidth-1" (MSB)
-        tickLabels = [str(int(respWidth - 1 - x)) for x in tickPositions]
-        plt.xticks(tickPositions, tickLabels)
-
-        plt.xlabel('Bit', fontsize=14)
-        plt.ylabel('Device Index', fontsize=14)
-
-        # Save the heatmap plot
-        plotFile = os.path.join(plotsPath, f'bit_reliability_{idPuf}_ch_{c}.pdf')
-        plt.savefig(plotFile, format='pdf', bbox_inches='tight', dpi=300)
-        plt.close()
-
-    # Calcoliamo mean e std sull'intera matrice
-    mu = np.nanmean(allDevBitRel)
-    std = np.nanstd(allDevBitRel)
-    print(f'[CLIENT-APP] - Total Bit Aliasing: mean = {mu} \t std = {std}')
-
-    # Salvataggio dei risultati su file
-    with open(bitReliabilityFile, 'a') as f:
-        f.write('Total\n')
-        f.write(f'Mean: {mu}\n')
-        f.write(f'Standard Deviation: {std}\n')
-
-    print(f'[CLIENT-APP] - BIT Reliability plots saved in: {plotsPath}')
