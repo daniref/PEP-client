@@ -536,7 +536,6 @@ def ComputeUniqueness(idTest, df, idPuf, indexDevToIdDev):
         # Lis to collect uniqueness values for the current challenge
         chUniqueness = []
 
-        print(f"df shape: {df.shape}")
         for d in range(numDevice):
 
             meanResponseA = np.nanmean(df[c, :, :, d], axis=1)
