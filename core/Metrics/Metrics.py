@@ -591,7 +591,116 @@ def ComputeUniqueness(idTest, df, idPuf, indexDevToIdDev):
     plt.close()
 
     print(f"Uniqueness plots saved in: {plotsPath}")
+
+# Compute the bits reliability for a given PUF
+def ComputeBitReliability(idTest, df, idPuf, indexDevToIdDev):
+    """
+    Computes the bit reliability for a given PUF (Physically Unclonable Function)
+    based on the provided response data. The function calculates the reliability
+    of each bit position across multiple devices and challenges, generates heatmaps,
+    and saves the results in specified directories.
+    Parameters:
+        idTest (int): Identifier for the test being performed.
+        df (numpy.ndarray): A 4-dimensional array containing response data with dimensions 
+            [numChals, responseWidth, numReps, numDevice].
+        idPuf (int): Identifier for the PUF being analyzed.
+        indexDevToIdDev (list): A list mapping device indices to their unique identifiers.
+    Outputs:
+        - Heatmap plots of bit reliability for each challenge.
+        - A text file containing the computed bit reliability statistics.
+    Side Effects:
+        - Creates directories for saving plots and statistics if they do not already exist.
+        - Deletes any pre-existing bit reliability files for the given PUF. 
+    Notes:
+        - The function handles NaN values in the response data by using `np.nanmean`.
+        - The heatmap is customized with a color palette and inverted axes for better visualization.
+    Example:
+        ComputeBitReliability(
+            idTest=1, 
+            df=response_data, 
+            idPuf=42, 
+            indexDevToIdDev=[101, 102, 103]
+        )
+    """
+    print(f'[CLIENT-APP] -----------------BIT RELIABILITY COMPUTATION FOR PUF {idPuf}-----------------')
+
+    numDevice = df.shape[3]
+    numReps = df.shape[2]
+    respWidth = df.shape[1]
+    numChals = df.shape[0]
+
+    if numChals > 10:
+        print(f'[CLIENT-APP] - Too many challenges ({numChals}). Skipping bit reliability computation.')
+        return
+
+    baseTestDir = baseTestsDir+str(idTest)
+    # Create directories to save plots and statistics
+    plotsPath = os.path.join(baseTestDir, 'results', 'plots' , 'reliability')
+    statsPath = os.path.join(baseTestDir, 'results', 'stats', 'reliability')
+    os.makedirs(plotsPath, exist_ok=True)
+    os.makedirs(statsPath, exist_ok=True)
+
+    bitReliabilityFile = os.path.join(statsPath, f'bitreliability_puf_{idPuf}.txt')
+    # Delete the file if it exists
+    if os.path.exists(bitReliabilityFile):
+        os.remove(bitReliabilityFile)
+
+    # Compute the bit reliability for each challenge
+    for c in range(numChals):
+        # allRespBitAlias will have dimensions (numDevice, respWidth)
+        allDevAllChBitRel = np.zeros((numDevice, respWidth))
+        # Compute the bit reliability for each device
+        for d in range(numDevice):
+            # Compute the average response bits for each challenge and device
+            oneDevOneChBitRel = np.nanmean(df[c, :, :, d], axis=(1))
+            allDevAllChBitRel[d, : ] = oneDevOneChBitRel
+
+        normalizedBitReliability = np.where(allDevAllChBitRel > 0.5, allDevAllChBitRel, 1 - allDevAllChBitRel)
+
+        # Plot the heatmap for bit reliability
+        plt.figure(figsize=(15, 2))
+
+        hm = sns.heatmap(
+            normalizedBitReliability,
+            cmap="viridis",
+            cbar=True,
+            xticklabels=False,  # Disable x tick labels
+            yticklabels=True,  # (idem per y)
+            vmin=0.5,
+            vmax=1
+        )
+
+        # Customizing the color bar
+        cbar = hm.collections[0].colorbar
+        cbar.set_ticks([0.5, 0.6, 0.7, 0.8, 0.9, 1])
+        cbar.set_ticklabels(['0.5', '0.6', '0.7', '0.8', '0.9', '1'])
     
+        # Invert the x-axis so that the most significant bit (MSB) is on the right
+        plt.gca().invert_xaxis()
+
+        # Invert the y-axis so that the first device is at the top
+        plt.gca().invert_yaxis()
+
+        # Create tick positions for the x-axis
+        numXTicks = 6
+        tickPositions = np.linspace(0, respWidth - 1, numXTicks)
+
+        # The labels will be in reverse order so that:
+        # - the column respWidth-1 (now on the left) has label "0" (LSB)
+        # - the column 0 (now on the right) has label "respWidth-1" (MSB)
+        tickLabels = [str(int(respWidth - 1 - x)) for x in tickPositions]
+        plt.xticks(tickPositions, tickLabels)
+
+        plt.xlabel('Bit', fontsize=14)
+        plt.ylabel('Device Index', fontsize=14)
+
+        # Save the heatmap plot
+        plotFile = os.path.join(plotsPath, f'bit_reliability_{idPuf}_ch_{c}.pdf')
+        plt.savefig(plotFile, format='pdf', bbox_inches='tight', dpi=300)
+        plt.close()
+
+    print(f'[CLIENT-APP] - BIT Reliability plots saved in: {plotsPath}')
+
 def AnalyzeFrequencies(idTest, idDev, idPufList, df, oscillPeriod):
     """
     Analyzes frequency data for a given test and device, generating heatmaps and statistics 
