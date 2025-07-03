@@ -268,6 +268,7 @@ def CalculateMetrics(idTest):
         for i in range(len(expCRPsList)):
             MT.ComputeUniformity(idTest,expCRPsList[i],i,indexDevToIdDev)
             MT.ComputeReliability(idTest,expCRPsList[i],i,indexDevToIdDev)
+            MT.ComputeBitReliability(idTest,expCRPsList[i],i,indexDevToIdDev)
             MT.ComputeBitAliasing(idTest,expCRPsList[i],i,indexDevToIdDev)
             MT.ComputeUniqueness(idTest,expCRPsList[i],i,indexDevToIdDev)
         
