@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     result, idUsr = HA.LogInUser(args.username, args.password)
     if not result:
-        print("[CLIENT-AUTO] - Login failed!")
+        print("[CLIENT-APP] - Login failed!")
         exit(1)
 
     if args.op == 0:
@@ -55,35 +55,35 @@ if __name__ == '__main__':
         if args.idTest is None:
             parser.error("--idTest is required for op=2")
         if HR.CheckCRPsExist(args.idTest):
-            print("[CLIENT-AUTO] - CRPs already downloaded.")
+            print("[CLIENT-APP] - CRPs already downloaded.")
         else:
-            print("[CLIENT-AUTO] - CRPs missing, starting download.")
+            print("[CLIENT-APP] - CRPs missing, starting download.")
             HR.ExpCampaignDownloading(args.idTest, args.username, args.password)
         HR.CalculateMetrics(args.idTest)
 
     elif args.op == 3:
         if HP.PowerUp('device', args.username, args.password):
-            print("[CLIENT-AUTO] - Devices powered up.")
+            print("[CLIENT-APP] - Devices powered up.")
         else:
-            print("[CLIENT-AUTO] - Error powering up devices.")
+            print("[CLIENT-APP] - Error powering up devices.")
 
     elif args.op == 4:
         if HP.PowerDown('device', args.username, args.password):
-            print("[CLIENT-AUTO] - Devices powered down.")
+            print("[CLIENT-APP] - Devices powered down.")
         else:
-            print("[CLIENT-AUTO] - Error powering down devices.")
+            print("[CLIENT-APP] - Error powering down devices.")
 
     elif args.op == 5:
         if HP.PowerUp('fan', args.username, args.password):
-            print("[CLIENT-AUTO] - Fans powered up.")
+            print("[CLIENT-APP] - Fans powered up.")
         else:
-            print("[CLIENT-AUTO] - Error powering up fans.")
+            print("[CLIENT-APP] - Error powering up fans.")
 
     elif args.op == 6:
         if HP.PowerDown('fan', args.username, args.password):
-            print("[CLIENT-AUTO] - Fans powered down.")
+            print("[CLIENT-APP] - Fans powered down.")
         else:
-            print("[CLIENT-AUTO] - Error powering down fans.")
+            print("[CLIENT-APP] - Error powering down fans.")
 
     elif args.op == 7:
         HA.RegisterUser()
