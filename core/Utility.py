@@ -33,9 +33,8 @@ expsConfigName='expsConfig'
 
 # Directory paths for test files and results
 baseTestsDir='tests/test'
-
+# Directory path for certificate file
 certFile='core/cert.pem'
-
 
 # ANSI color codes
 CYAN = "\033[96m"
@@ -44,8 +43,9 @@ RESET = "\033[0m"
 GREEN = "\033[92m"
 RED = "\033[91m"
 
-# Function to display the SPECTRE logo with colors
 def DisplayLogo():
+    """Displays the SPECTRE logo in the console with color formatting.
+    """
     print(f"""
   .-')     _ (`-.    ('-.             .-') _   _  .-')     ('-.   
  ( OO ).  ( (OO  ) _(  OO)           (  OO) ) ( \( -O )  _(  OO)  
@@ -61,6 +61,13 @@ def DisplayLogo():
     """)
 
 def SetServerAddress(serverAddress):
+    """
+    Sets the server address based on the user's choice.
+    Args:
+        serverAddress (str): 'pub' for public server, 'priv' for private server.
+    Returns:
+        bool: True if the server address was set successfully, False otherwise.
+    """
     global ServerAddress
     if serverAddress == 'pub':
         ServerAddress =  PubServerAddress 
@@ -73,5 +80,8 @@ def SetServerAddress(serverAddress):
         return False
 
 def GetServerAddress():
+    """
+    Returns the current server address.
+    """
     return ServerAddress
 
